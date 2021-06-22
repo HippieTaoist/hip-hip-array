@@ -76,8 +76,15 @@ for (let i = 0; i < mixedSignNumbers.length; i++) {
 
 // // Challenge 5
 // // Remove two values from the beginning and one value from the end of the following array, simply by deleting them in the following line. Then console.log out each value individually.
-// const symmetricalCapitals = ['A', 'H', 'I', 'M', 'O', 'T', 'U', 'V', 'W', 'X', 'Y'];
+const symmetricalCapitals = ['A', 'H', 'I', 'M', 'O', 'T', 'U', 'V', 'W', 'X', 'Y'];
+symmetricalCapitals.splice(0, 1);
+let tempIndex = symmetricalCapitals.length - 1
+symmetricalCapitals.splice(tempIndex, 1);
+for (let i = 0; i < symmetricalCapitals.length; i++) {
+    const printChar = symmetricalCapitals[i];
+    console.log(printChar)
 
+}
 
 // // Challenge 6
 // // Add a value (your choice!) to the start of the following array and two values (of your choice) to the end simply by adding them in the following line, and then console.log out each value individually.
