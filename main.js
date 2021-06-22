@@ -45,9 +45,21 @@ let gradesReverse = grades.slice(0).reverse();
 for (let i = 0, len = gradesReverse.length; i < len; i++) {
     console.log(gradesReverse[i]);
 }
+
+
 // // Challenge 3
 // // Console.log out only the even numbers in the following array.
-// const positiveNumbers = [5, 2, 13, 17, 4, 102, 3000];
+const positiveNumbers = [5, 2, 13, 17, 4, 102, 3000];
+
+for (let digit = 0; digit < positiveNumbers.length; digit++) {
+
+    if (positiveNumbers[digit] % 2 === 0) {
+
+        console.log(positiveNumbers[digit])
+
+    }
+
+}
 
 
 // // Challenge 4
